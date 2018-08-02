@@ -1,8 +1,6 @@
 language: c  
 sudo: false # only for faster builds  
-compiler:
-        - clang
-        - gcc
-      script:  
-        - gcc -o file file.c  
-        - ./file  
+compiler: gcc
+script:  
+   - gcc -o file file.c  
+   - ./file  
